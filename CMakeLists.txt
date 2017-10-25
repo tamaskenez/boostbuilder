@@ -45,7 +45,7 @@ else()
     message(STATUS "branch: ${BOOSTBUILD_CURRENT_BRANCH}")
 endif()
 
-list(APPEND LIBS core config assert static_assert predef)
+list(APPEND LIBS core config assert static_assert predef detail)
 list(SORT LIBS)
 list(REMOVE_DUPLICATES LIBS)
 unset(PREFIXED_LIBS)
